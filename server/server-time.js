@@ -1,5 +1,6 @@
 Meteor.methods({
     'socialize:getServerTime': function() {
+    	Meteor._sleepForMs(1000);
         return Date.now();
     }
 });
